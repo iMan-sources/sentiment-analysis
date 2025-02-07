@@ -96,6 +96,20 @@ npm install
 npm start
 ```
 
+3. Model
+
+```bash
+# Tạo model
+mkdir model
+cd model
+# Download model từ link: https://drive.google.com/drive/folders/1JZb9AWXe_6KxRMv-arAe8zBl1IVKrLDa?usp=sharing
+# Giải nén file và đặt tên thư mục là `my-imdb-sentiment-model`
+# Đặt thư mục vừa giải nén vào thư mục `model/`
+
+# Cài đặt torch
+pip3 install torch --index-url https://download.pytorch.org/whl/cpu
+```
+
 ## Cấu hình
 
 1. Database
