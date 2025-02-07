@@ -1,0 +1,3 @@
+[submodule "review-dashboard"]
+	path = review-dashboard
+	url = https://github.com/iMan-sources/sentiment-analysis-dashboard.git
