@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+training_data/
+logs/
+
+# Database
+*.db
+*.sqlite3
+
+# Environment variables
+.env
+
+# Model files - sẽ đẩy ở commit sau
+*.h5
+*.pkl
+model/
