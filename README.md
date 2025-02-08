@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/zuOURf2.png" />
+
 # Sentiment Analysis Dashboard
 
 Hệ thống phân tích cảm xúc (sentiment) cho các đánh giá sách với dashboard theo dõi hiệu suất model.
@@ -28,7 +30,7 @@ Dự án này có phạm vi ứng dụng rộng rãi, không giới hạn trong 
 *   Các trang web bán sách trực tuyến: Để cải thiện hệ thống đề xuất và cá nhân hóa trải nghiệm người dùng.
 *   Các nhà nghiên cứu thị trường: Để thu thập thông tin về xu hướng đọc sách và sở thích của độc giả.
 
-## Tính năng chính
+## Tính năng chính đã xây dựng
 
 - Phân tích sentiment tự động cho các đánh giá sách
 - Dashboard theo dõi hiệu suất model theo thời gian thực
