@@ -13,20 +13,20 @@ class BookDB(Base):
     title = Column(String(200), nullable=False)
     author = Column(String(200), nullable=False)
     price = Column(Float, nullable=False)
-    description = Column(String(1000))
+    description = Column(String(10000))
     imageUrl = Column(String(500))
     comments = relationship("CommentDB", back_populates="book", cascade="all, delete-orphan")
 
 class CommentDB(Base):
     __tablename__ = "comments"
 
-    id = Column(String, primary_key=True)
-    content = Column(String)
-    userId = Column(String)
-    userName = Column(String)
-    sentiment = Column(String)  # "positive" hoặc "negative"
+    id = Column(String(36), primary_key=True)
+    content = Column(String(10000))
+    userId = Column(String(36))
+    userName = Column(String(255))
+    sentiment = Column(String(20))
     timestamp = Column(DateTime)
-    book_id = Column(String, ForeignKey("books.id"))
+    book_id = Column(String(20), ForeignKey("books.id"))
     
     book = relationship("BookDB", back_populates="comments")
     replies = relationship("ReplyDB", back_populates="comment", cascade="all, delete-orphan")
