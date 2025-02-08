@@ -24,7 +24,18 @@ git clone <repository-url>
 cd <project-folder>
 ```
 
-2. (Tùy chọn) Tạo file `.env` để cấu hình:
+2. Download Model
+
+```bash
+# Tạo model
+mkdir model
+cd model
+# Download model từ link: https://drive.google.com/drive/folders/1JZb9AWXe_6KxRMv-arAe8zBl1IVKrLDa?usp=sharing
+# Giải nén file và đặt tên thư mục là `my-imdb-sentiment-model`
+# Đặt thư mục vừa giải nén vào thư mục `model/`
+```
+
+3. (Tùy chọn) Tạo file `.env` để cấu hình:
 
 ```env
 MYSQL_USER=root
@@ -32,7 +43,7 @@ MYSQL_PASSWORD=anhle3720
 MYSQL_DATABASE=bookstore
 ```
 
-3. Build và chạy với Docker:
+4. Build và chạy với Docker:
 
 ```bash
 docker-compose up --build
