@@ -16,8 +16,8 @@ dataset = load_dataset("imdb")
 
 # No need for conversion since IMDB already uses 0 for negative and 1 for positive
 # Create smaller datasets for faster training
-small_train_dataset = dataset["train"].shuffle(seed=42).select([i for i in list(range(5000))])
-small_test_dataset = dataset["test"].shuffle(seed=42).select([i for i in list(range(500))])
+small_train_dataset = dataset["train"].shuffle(seed=42).select([i for i in list(range(25000))])
+small_test_dataset = dataset["test"].shuffle(seed=42).select([i for i in list(range(2500))])
 
 # Initialize tokenizer
 tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
