@@ -2,6 +2,32 @@
 
 Hệ thống phân tích cảm xúc (sentiment) cho các đánh giá sách với dashboard theo dõi hiệu suất model.
 
+## Tóm tắt
+
+Ngày nay, việc hiểu được cảm xúc của khách hàng về sản phẩm và dịch vụ là vô cùng quan trọng. Dự án này xây dựng một hệ thống phân tích cảm xúc tự động dành cho các đánh giá sách, giúp theo dõi hiệu suất của mô hình phân tích và cải thiện độ chính xác theo thời gian. Hệ thống cung cấp một dashboard trực quan để theo dõi hiệu suất, cho phép người dùng sửa các phân loại cảm xúc sai, và sử dụng các sửa đổi này để liên tục cải thiện mô hình. Việc cập nhật theo thời gian thực thông qua WebSocket giúp người dùng luôn nắm bắt được thông tin mới nhất.
+
+## Giới thiệu
+
+Các đánh giá sách chứa đựng lượng lớn thông tin về cảm xúc của độc giả đối với các tác phẩm. Việc phân tích thủ công khối lượng lớn đánh giá này là một nhiệm vụ tốn thời gian và công sức. Dự án "Sentiment Analysis Dashboard" được phát triển để tự động hóa quá trình này, sử dụng các kỹ thuật Machine Learning và Xử lý ngôn ngữ tự nhiên (NLP) để phân loại cảm xúc (tích cực, tiêu cực, trung tính) của các đánh giá. Dashboard theo dõi hiệu suất giúp đánh giá và cải thiện độ chính xác của mô hình theo thời gian.
+
+### Mục tiêu
+
+Mục tiêu chính của dự án là xây dựng một hệ thống phân tích cảm xúc tự động và trực quan cho các đánh giá sách, cho phép:
+
+*   Phân tích cảm xúc tự động và chính xác.
+*   Theo dõi hiệu suất mô hình theo thời gian thực thông qua dashboard.
+*   Cải thiện độ chính xác của mô hình bằng cách thu thập dữ liệu training từ các sửa đổi của người dùng.
+*   Cung cấp cập nhật theo thời gian thực thông qua WebSocket.
+
+### Phạm vi dự án
+
+Dự án này có phạm vi ứng dụng rộng rãi, không giới hạn trong một tổ chức cụ thể. Hệ thống có thể được sử dụng bởi bất kỳ ai quan tâm đến việc phân tích cảm xúc của các đánh giá sách, bao gồm:
+
+*   Nhà xuất bản: Để đánh giá phản hồi của độc giả về sách mới.
+*   Tác giả: Để hiểu rõ hơn về cách độc giả cảm nhận về tác phẩm của họ.
+*   Các trang web bán sách trực tuyến: Để cải thiện hệ thống đề xuất và cá nhân hóa trải nghiệm người dùng.
+*   Các nhà nghiên cứu thị trường: Để thu thập thông tin về xu hướng đọc sách và sở thích của độc giả.
+
 ## Tính năng chính
 
 - Phân tích sentiment tự động cho các đánh giá sách
