@@ -14,6 +14,8 @@ services:
       - MYSQL_HOST=db
       - MYSQL_PORT=3306
     restart: always
+    volumes:
+      - ./training_data:/app/training_data
 
   db:
     image: mysql:8.0
